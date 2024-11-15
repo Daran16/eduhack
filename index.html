@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduAlert</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>EduAlert</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#scholarships">Scholarships</a>
+        <a href="#exams">Exams</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#internals">Internal Marks</a>
+        <a href="#events">Events</a>
+        <a href="#leave">Leave/OD</a>
+        <a href="#circulars">Circulars</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <h2>Welcome to EduAlert</h2>
+      <p>Stay informed about scholarships, exams, attendance, assignments, and more. Your all-in-one academic organizer!</p>
+    </section>
+
+    <section id="scholarships" class="section">
+      <h2>Scholarship Alerts</h2>
+      <div class="card-container" id="scholarship-cards"></div>
+    </section>
+
+    <section id="exams" class="section">
+      <h2>Exam Notifications</h2>
+      <ul id="exam-list"></ul>
+    </section>
+
+    <section id="attendance" class="section">
+      <h2>Attendance Alerts</h2>
+      <p>Your attendance is below the required level. Please contact your faculty advisor!</p>
+    </section>
+
+    <section id="assignments" class="section">
+      <h2>Assignments</h2>
+      <ul>
+        <li>Math Assignment: Submit by 20th Nov</li>
+        <li>Physics Project: Submit by 25th Nov</li>
+      </ul>
+    </section>
+
+    <section id="internals" class="section">
+      <h2>Internal Marks</h2>
+      <ul>
+        <li>Math: 85/100</li>
+        <li>Physics: 78/100</li>
+        <li>Chemistry: 88/100</li>
+      </ul>
+    </section>
+
+    <section id="events" class="section">
+      <h2>Events</h2>
+      <ul>
+        <li>Hackathon: 10th Dec 2024</li>
+        <li>Symposium: 15th Jan 2025</li>
+      </ul>
+    </section>
+
+    <section id="leave" class="section">
+      <h2>Leave/OD Request</h2>
+      <form id="leave-form">
+        <label for="leave-type">Type:</label>
+        <select id="leave-type">
+          <option value="leave">Leave</option>
+          <option value="od">OD</option>
+        </select>
+        <label for="leave-date">Date:</label>
+        <input type="date" id="leave-date">
+        <label for="leave-reason">Reason:</label>
+        <textarea id="leave-reason"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="circulars" class="section">
+      <h2>Information (Circulars)</h2>
+      <ul>
+        <li>New library timings effective from 1st Dec.</li>
+        <li>Workshop on AI scheduled for 5th Dec.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 EduAlert | Helping students stay organized and informed.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
